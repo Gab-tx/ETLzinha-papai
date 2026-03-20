@@ -1,5 +1,5 @@
 from models.imperative import insert_table, create_tables, select_table
-from ETL import *
+from src.ETL import *
 from pprint import pprint
     
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from config import config_mysql,config_postgresql
+from config.config import config_mysql,config_postgresql
 
 try:
     engine_mysql = create_engine(

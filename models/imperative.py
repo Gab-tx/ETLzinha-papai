@@ -3,7 +3,7 @@ from sqlalchemy import (
     String, Integer, Date, VARCHAR,text,
     insert,update,select,delete,func)
 from datetime import datetime as dt
-from db import engine_postgresql,engine_mysql
+from config.db import engine_postgresql,engine_mysql
 
 
 # Mysql
