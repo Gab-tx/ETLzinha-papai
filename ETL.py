@@ -12,12 +12,19 @@ def read_json() -> list:
      
 def remover_nulos_e_duplicados(dados:list) -> dict:
     """
-    return {
+    Como a função diz, remove nulos e duplicados usando métodos da classe
+    dataframe do pandas.
+
+    - Parâmetros: dados(lista) -> uma lista de dicionários
+
+    - return {
         "dados": LIST(DICT),
         "email_nulos": INT,
         "nome_nulos": INT,
         "duplicados": INT
-    }"""
+    }
+    
+    """
 
     dataframe = pd.DataFrame(dados)
     dataframe_sem_nomes_nulos = dataframe.dropna(subset=["nome"])
@@ -36,7 +43,14 @@ def remover_nulos_e_duplicados(dados:list) -> dict:
 
     }
 
-def _limpar_nan(dados):
+def _limpar_nan(dados:list):
+    """
+    função auxiliar que limpa os dados NaN do Pandas e transforma em None
+
+    - parâmetros: dados(lista) -> lista de dicionários
+
+    - return dados (lista de dicionários)
+    """
     for item in dados:
         for k,v in item.items():
             if pd.isna(v):
@@ -46,9 +60,14 @@ def _limpar_nan(dados):
 
 def normalizar(dados:list) -> dict:
     """
-    return {
-        "dados_normalizados": normalizado,
-        "dados_email_invalido": email_invalido
+    `Normaliza dados usando funções auxiliares como _format_name e _verify_email
+    nomes são formatados se não forem none e email errados não saõ incluídos`
+
+    - parâmetros: dados(lista) -> lista de dicionários
+
+    - return {
+        "dados_normalizados": lista de dicionários,
+        "dados_email_invalido": lista de dicionários
     }
 
     """
@@ -72,6 +91,13 @@ def normalizar(dados:list) -> dict:
 
 
 def _verify_email(email:str) -> bool:
+    """
+    função que verifica um email a partir de uma string
+
+    - parâmetros: email(str) 
+
+    - return: Boolean (True/False)
+    """
     if "@" not in email or ".com" not in email or "email" not in email:
         return False
     return True
