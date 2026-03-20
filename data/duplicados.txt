@@ -1,0 +1,11 @@
+
+{'nome': 'Rogério Cunha', 'email': 'rogerio.cunha@email.com'}
+{'nome': 'Sabrina Moreira', 'email': 'sabrina.moreira@email.com'}
+{'nome': 'Thiago Andrade', 'email': 'thiago.andrade@email.com'}
+{'nome': 'Valéria Campos', 'email': 'valeria.campos@email.com'}
+{'nome': 'William Figueiredo', 'email': 'william.figueiredo@email.com'}
+{'nome': 'Yuri Medeiros', 'email': 'yuri.medeiros@email.com'}
+{'nome': 'Zuleica Borges', 'email': 'zuleica.borges@email.com'}
+{'nome': 'Adriana Pinheiro', 'email': 'adriana.pinheiro@email.com'}
+{'nome': 'Brenda Coelho', 'email': 'brenda.coelho@email.com'}
+{'nome': 'Caio Rezende', 'email': 'caio.rezende@email.com'}
